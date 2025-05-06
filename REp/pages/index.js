@@ -23,9 +23,17 @@ export default function Home() {
               </div>
             </div>
             <div className="flex items-center">
+            <div className="flex space-x-4">
+              <Link
+                href="/database"
+                className="bg-primary-500 hover:bg-primary-600 text-white px-4 py-2 rounded-md text-sm font-medium"
+              >
+                Database
+              </Link>
               <button className="bg-primary-500 hover:bg-primary-600 text-white px-4 py-2 rounded-md text-sm font-medium">
                 Add New Music
               </button>
+            </div>
             </div>
           </div>
         </div>
@@ -44,9 +52,17 @@ export default function Home() {
                 <p className="text-primary-100 text-lg mb-6">
                   Streamline your music metadata, licensing, and royalty management all in one place.
                 </p>
-                <button className="bg-white text-primary-600 px-6 py-3 rounded-md font-medium hover:bg-primary-50 transition-colors">
-                  Get Started
-                </button>
+                <div className="flex gap-4">
+                  <Link
+                    href="/database"
+                    className="bg-white text-primary-600 px-6 py-3 rounded-md font-medium hover:bg-primary-50 transition-colors"
+                  >
+                    Explore Database
+                  </Link>
+                  <button className="bg-white text-primary-600 px-6 py-3 rounded-md font-medium hover:bg-primary-50 transition-colors">
+                    Get Started
+                  </button>
+                </div>
               </div>
               <div className="hidden md:block md:w-1/2">
                 <div className="relative h-64">
